@@ -1,0 +1,121 @@
+// vim: se ft=xkb :
+partial alphanumeric_keys modifier_keys keypad_keys
+xkb_symbols "basic" {
+
+    // Levels in Neo jargon
+    // --------------------------------------------------------------
+    // Ebene 1: normal
+    // Ebene 2: Shift
+    // Ebene 3: Mod3
+    // Ebene 4: Mod4 (for marking something use Shift + Mod4)
+    // Ebene 5: Shift + Mod3
+    // Ebene 6: Mod3 + Mod4
+    // Compose (not a level): Mod3 + Tab
+    // Feststelltaste (Capslock): Shift + Shift
+    // Mod4-Lock: Mod4 + Mod4
+    // Mod4-Lock: Shift + Mod3 + Tab
+
+    // Legend
+    // ===============
+    // Levels in Xkbmap jargon to be found here in the definitions. 
+    // These are the levels used, and Xorg's translations:
+    // --------------------------------------------------------------
+    // Xorg:       Level1                   Level2                   Level3                   Level4                   Level5                   Level6                   Level7                   Level8                   
+    // Neo:        Ebene1                   Ebene2                   Ebene3                   Ebene5                   Ebene4                   Pseudo-Ebene             Ebene6                   ???                      
+    // Keys (Neo): None                     Shift                    Mod3                     Mod3 + Shift             Mod4                     Mod4 + Shift             Mod3 + Mod4              Mod3 + Mod4 + Shift      
+
+
+    // Alphanumeric-keys
+    // ===============
+    key.type[Group1] = "FOUR_LEVEL";
+    key.type[Group2] = "TWO_LEVEL";
+
+    // Tab as Multi_key (Compose)
+    // --------------------------------------------------------------
+    key  <TAB> { [ Tab,                     ISO_Left_Tab,            Multi_key,               ISO_Level5_Lock         ] };
+
+
+    // Number row
+    // --------------------------------------------------------------
+    key <TLDE> { [ dead_circumflex,         dead_caron,              U21BB,                   U02DE                   ] };
+
+    key <AE01> { [ 1,                       degree,                  onesuperior,             onesubscript            ] };
+    key <AE02> { [ 2,                       section,                 twosuperior,             twosubscript            ] };
+    key <AE03> { [ 3,                       U2113,                   threesuperior,           threesubscript          ] };
+    key <AE04> { [ 4,                       guillemotright,          U203A,                   femalesymbol            ] };
+    key <AE05> { [ 5,                       guillemotleft,           U2039,                   malesymbol              ] };
+    key <AE06> { [ 6,                       dollar,                  cent,                    U26A5                   ] };
+
+    key <AE07> { [ 7,                       EuroSign,                yen,                     U03F0                   ] };
+    key <AE08> { [ 8,                       doublelowquotemark,      singlelowquotemark,      U27E8                   ] };
+    key <AE09> { [ 9,                       leftdoublequotemark,     leftsinglequotemark,     U27E9                   ] };
+    key <AE10> { [ 0,                       rightdoublequotemark,    rightsinglequotemark,    zerosubscript           ] };
+
+    key <AE11> { [ minus,                   emdash,                  NoSymbol,                U2011                   ] };
+    key <AE12> { [ dead_grave,              dead_cedilla,            dead_abovering,          dead_dasia              ] };
+
+    // Top row
+    // --------------------------------------------------------------
+    key.type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC";
+    key <AD01> { [ q,                       Q,                       ellipsis,                Greek_xi                ] };
+    key <AD02> { [ g,                       G,                       underscore,              NoSymbol                ] };
+    key <AD03> { [ m,                       M,                       bracketleft,             Greek_lambda            ] };
+    key <AD04> { [ l,                       L,                       bracketright,            Greek_chi               ] };
+    key <AD05> { [ w,                       W,                       asciicircum,             Greek_omega             ] };
+
+    key <AD06> { [ b,                       B,                       exclam,                  Greek_kappa             ] };
+    key <AD07> { [ y,                       Y,                       less,                    Greek_psi               ] };
+    key <AD08> { [ u,                       U,                       greater,                 Greek_gamma             ] };
+    key <AD09> { [ v,                       V,                       equal,                   Greek_phi               ] };
+    key <AD10> { [ semicolon,               colon,                   ampersand,               U03D5                   ] };
+
+    key <AD11> { [ ssharp,                  U1E9E,                   U017F,                   Greek_finalsmallsigma   ] };
+
+    key.type[Group1] = "FOUR_LEVEL";
+    key <AD12> { [ dead_acute,              dead_tilde,              dead_stroke,             dead_psili              ] };
+
+    // Middle row
+    // --------------------------------------------------------------
+    key.type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC";
+    key <AC01> { [ d,                       D,                       backslash,               NoSymbol                ] };
+    key <AC02> { [ s,                       S,                       slash,                   Greek_iota              ] };
+    key <AC03> { [ t,                       T,                       braceleft,               Greek_alpha             ] };
+    key <AC04> { [ n,                       N,                       braceright,              Greek_epsilon           ] };
+    key <AC05> { [ r,                       R,                       asterisk,                Greek_omicron           ] };
+                                             
+    key <AC06> { [ i,                       I,                       question,                Greek_sigma             ] };
+    key <AC07> { [ a,                       A,                       parenleft,               Greek_nu                ] };
+    key <AC08> { [ e,                       E,                       parenright,              Greek_rho               ] };
+    key <AC09> { [ o,                       O,                       minus,                   Greek_tau               ] };
+    key <AC10> { [ h,                       H,                       colon,                   Greek_delta             ] };
+
+    key <AC11> {
+		type[Group1] = "ONE_LEVEL",
+		symbols[Group1] = [ ISO_Level3_Shift ]
+	};
+	modifier_map Mod5   { ISO_Level3_Shift };
+
+    // Bottom row
+    // --------------------------------------------------------------
+    key <AB01> { [ z,                       z,                       numbersign,              NoSymbol                ] };
+    key <AB02> { [ x,                       x,                       dollar,                  U03F5                   ] };
+    key <AB03> { [ c,                       c,                       bar,                     Greek_eta               ] };
+    key <AB04> { [ f,                       f,                       asciitilde,              Greek_pi                ] };
+    key <AB05> { [ j,                       j,                       grave,                   Greek_zeta              ] };
+                                             
+    key <AB06> { [ k,                       k,                       plus,                    Greek_beta              ] };
+    key <AB07> { [ p,                       p,                       percent,                 Greek_mu                ] };
+    key.type[Group1] = "FOUR_LEVEL";
+    key <AB08> { [ comma,                   endash,                  quotedbl,                U03F1                   ] };
+    key <AB09> { [ period,                  enfilledcircbullet,      apostrophe,              U03D1                   ] };
+
+    key <AB10> {
+		type[Group1] = "ONE_LEVEL",
+		symbols[Group1] = [ Mode_switch ]
+	};
+
+
+    // Space key
+    // --------------------------------------------------------------
+    key <SPCE> { [ space,                   space,                   space,                   nobreakspace            ] };
+};
