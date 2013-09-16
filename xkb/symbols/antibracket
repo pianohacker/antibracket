@@ -186,11 +186,11 @@ xkb_symbols "basic" {
 	// --------------------------------------------------------------
 	key.type[Group1] = "FOUR_LEVEL";
 	key <AB01> {
-		[ period,                  greater,                 numbersign,              NoSymbol                ],
+		[ period,                  question,                numbersign,              NoSymbol                ],
 		[ NoSymbol,                NoSymbol                  ]
 	};
 	key <AB02> {
-		[ comma,                   less,                    dollar,                  U03F5                   ],
+		[ comma,                   exclam,                  dollar,                  U03F5                   ],
 		[ NoSymbol,                NoSymbol                  ]
 	};
 	key.type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC";
@@ -222,7 +222,7 @@ xkb_symbols "basic" {
 		[ NoSymbol,                NoSymbol                  ]
 	};
 	key <AB09> {
-		[ j,                       J,                       percent,                 Greek_mu                ],
+		[ j,                       J,                       at,                      Greek_mu                ],
 		[ NoSymbol,                NoSymbol                  ]
 	};
 
