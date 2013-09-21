@@ -93,7 +93,7 @@ xkb_symbols "basic" {
 		[ Delete,                  NoSymbol                  ]
 	};
 	key <AD05> {
-		[ z,                       z,                       asciicircum,             Greek_omega             ],
+		[ z,                       Z,                       asciicircum,             Greek_omega             ],
 		[ NoSymbol,                NoSymbol                  ]
 	};
 
