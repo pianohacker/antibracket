@@ -165,7 +165,7 @@ xkb_symbols "basic" {
 		[ 5,                       NoSymbol                  ]
 	};
 	key <AC09> {
-		[ d,                       D,                       backslash,               Greek_tau               ],
+		[ d,                       D,                       apostrophe,              Greek_tau               ],
 		[ 6,                       NoSymbol                  ]
 	};
 	key <AC10> {
@@ -217,7 +217,7 @@ xkb_symbols "basic" {
 		[ 1,                       NoSymbol                  ]
 	};
 	key <AB08> {
-		[ c,                       C,                       apostrophe,              Greek_beta              ],
+		[ c,                       C,                       backslash,               Greek_beta              ],
 		[ 2,                       NoSymbol                  ]
 	};
 	key.type[Group1] = "FOUR_LEVEL";
