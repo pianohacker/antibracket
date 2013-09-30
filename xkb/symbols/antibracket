@@ -195,11 +195,11 @@ xkb_symbols "basic" {
 	};
 	key <AB03> {
 		[ m,                       M,                       bar,                     Greek_eta               ],
-		[ NoSymbol,                NoSymbol                  ]
+		[ bracketleft,             NoSymbol                  ]
 	};
 	key <AB04> {
 		[ j,                       J,                       asciitilde,              Greek_pi                ],
-		[ NoSymbol,                NoSymbol                  ]
+		[ bracketright,            NoSymbol                  ]
 	};
 	key.type[Group1] = "FOUR_LEVEL";
 	key <AB05> {
