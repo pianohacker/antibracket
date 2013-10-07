@@ -170,7 +170,7 @@ xkb_symbols "basic" {
 	};
 	key <AC10> {
 		[ s,                       S,                       colon,                   Greek_delta             ],
-		[ NoSymbol,                NoSymbol                  ]
+		[ Escape,                  NoSymbol                  ]
 	};
 
 	key <AC11> {
