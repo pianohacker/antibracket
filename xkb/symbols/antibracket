@@ -78,7 +78,7 @@ xkb_symbols "basic" {
 	key.type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC";
 	key <AD01> {
 		[ w,                       W,                       quotedbl,                Greek_xi                ],
-		[ NoSymbol,                NoSymbol                  ]
+		[ Prior,                   NoSymbol                  ]
 	};
 	key <AD02> {
 		[ f,                       F,                       underscore,              NoSymbol                ],
@@ -94,7 +94,7 @@ xkb_symbols "basic" {
 	};
 	key <AD05> {
 		[ z,                       Z,                       asciicircum,             Greek_omega             ],
-		[ NoSymbol,                NoSymbol                  ]
+		[ Next,                    NoSymbol                  ]
 	};
 
 	key <AD06> {
@@ -238,6 +238,6 @@ xkb_symbols "basic" {
 	// --------------------------------------------------------------
 	key <SPCE> {
 		[ space,                   space,                   space,                   nobreakspace            ],
-		[ Escape,                  NoSymbol                  ]
+		[ space,                   space                    ]
 	};
 };
