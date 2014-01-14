@@ -65,11 +65,11 @@ xkb_symbols "basic" {
 	};
 
 	key <AE11> {
-		[ equal,                   plus,                    NoSymbol,                U2011                   ],
+		[ equal,                   less,                    NoSymbol,                U2011                   ],
 		[ NoSymbol,                NoSymbol                  ]
 	};
 	key <AE12> {
-		[ underscore,              minus,                   dead_abovering,          dead_dasia              ],
+		[ underscore,              greater,                 dead_abovering,          dead_dasia              ],
 		[ NoSymbol,                NoSymbol                  ]
 	};
 
@@ -120,7 +120,7 @@ xkb_symbols "basic" {
 
 	key.type[Group1] = "FOUR_LEVEL";
 	key <AD11> {
-		[ ssharp,                  U1E9E,                   U017F,                   Greek_finalsmallsigma   ],
+		[ Escape,                  Escape,                  U017F,                   Greek_finalsmallsigma   ],
 		[ NoSymbol,                NoSymbol                  ]
 	};
 	key <AD12> {
@@ -130,6 +130,13 @@ xkb_symbols "basic" {
 
 	// Middle row
 	// --------------------------------------------------------------
+	key <CAPS> {
+		type[Group1] = "ONE_LEVEL",
+		symbols[Group1] = [ Mode_switch ],
+		type[Group2] = "ONE_LEVEL",
+		symbols[Group2] = [ Mode_switch ]
+	};
+
 	key.type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC";
 	key <AC01> {
 		[ l,                       L,                       slash,                   NoSymbol                ],
