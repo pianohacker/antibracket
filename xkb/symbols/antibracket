@@ -124,17 +124,16 @@ xkb_symbols "basic" {
 		[ NoSymbol,                NoSymbol                  ]
 	};
 	key <AD12> {
-		[ dead_acute,              dead_tilde,              dead_stroke,             dead_psili              ],
+		[ XF86Launch0,             dead_tilde,              dead_stroke,             dead_psili              ],
 		[ NoSymbol,                NoSymbol                  ]
 	};
 
 	// Middle row
 	// --------------------------------------------------------------
+	modifier_map Lock { ISO_Emphasize };
 	key <CAPS> {
 		type[Group1] = "ONE_LEVEL",
-		symbols[Group1] = [ Mode_switch ],
-		type[Group2] = "ONE_LEVEL",
-		symbols[Group2] = [ Mode_switch ]
+		symbols[Group1] = [ Mode_switch ]
 	};
 
 	key.type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC";
