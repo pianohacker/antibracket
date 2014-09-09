@@ -10,8 +10,8 @@ xkb_symbols "basic" {
 	// Tab as Multi_key (Compose)
 	// --------------------------------------------------------------
 	key  <TAB> {
-		[ Tab,                     ISO_Left_Tab,            Multi_key,               ISO_Level5_Lock         ],
-		[ NoSymbol,                NoSymbol                  ]
+		[ 0xfd12,               0xfd12,               Multi_key,               ISO_Level5_Lock         ],
+		[ Multi_key,               NoSymbol                  ]
 	};
 
 
@@ -132,9 +132,9 @@ xkb_symbols "basic" {
 	// --------------------------------------------------------------
 	key <CAPS> {
 		type[Group1] = "ONE_LEVEL",
-		symbols[Group1] = [ Mode_switch ],
+		symbols[Group1] = [ Tab ],
 		type[Group2] = "ONE_LEVEL",
-		symbols[Group2] = [ NoSymbol ]
+		symbols[Group2] = [ Multi_key ]
 	};
 
 	key.type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC";
