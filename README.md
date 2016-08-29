@@ -3,9 +3,12 @@
 This is a keyboard layout designed to combine the ambition of Dvorak, practicality of Colemak and
 the punctuation of Neo.
 
-## Testing
+## Usage
 
-There is currently no way to integrate Antibracket into the main XKB repositories. For now, though,
-you can run:
+To install Antibracket, link it into your xkb directory like so:
 
-    xkbcomp -I$PWD/xkb xkb/test.xkb $DISPLAY
+    sudo ln -s $PWD/xkb/symbols/antibracket /usr/share/X11/xkb/symbols
+
+Then it can be used with the following command:
+
+    setxkbmap antibracket
