@@ -52,7 +52,7 @@ xkb_symbols "basic" {
 		[ NoSymbol,                NoSymbol                  ]
 	};
 	key <AE08> {
-		[ 8,                       doublelowquotemark,      singlelowquotemark,      U27E8                   ],
+		[ 8,                       asterisk,                singlelowquotemark,      U27E8                   ],
 		[ NoSymbol,                NoSymbol                  ]
 	};
 	key <AE09> {
@@ -65,11 +65,11 @@ xkb_symbols "basic" {
 	};
 
 	key <AE11> {
-		[ equal,                   less,                    NoSymbol,                U2011                   ],
+		[ minus,                   equal,                   NoSymbol,                U2011                   ],
 		[ NoSymbol,                NoSymbol                  ]
 	};
 	key <AE12> {
-		[ underscore,              greater,                 dead_abovering,          dead_dasia              ],
+		[ underscore,              minus,                   dead_abovering,          dead_dasia              ],
 		[ NoSymbol,                NoSymbol                  ]
 	};
 
@@ -99,7 +99,7 @@ xkb_symbols "basic" {
 
 	key <AD06> {
 		[ x,                       X,                       exclam,                  Greek_kappa             ],
-		[ NoSymbol,                NoSymbol                  ]
+		[ minus,                   NoSymbol                  ]
 	};
 	key <AD07> {
 		[ h,                       H,                       less,                    Greek_psi               ],
@@ -124,7 +124,7 @@ xkb_symbols "basic" {
 		[ NoSymbol,                NoSymbol                  ]
 	};
 	key <AD12> {
-		[ XF86Launch0,             dead_tilde,              dead_stroke,             dead_psili              ],
+		[ XF86Explorer,             dead_tilde,              dead_stroke,             dead_psili              ],
 		[ NoSymbol,                NoSymbol                  ]
 	};
 
