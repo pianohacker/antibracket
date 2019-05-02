@@ -5,6 +5,74 @@
 		{
 			"type": "basic",
 			"from": {
+				"key_code": "slash",
+				"modifiers": {
+					"optional": ["any"],
+				}
+			},
+			"to": [
+				{ "set_variable": { "name": "arnum_modifier", "value": 1 } }
+			],
+			"to_after_key_up": [
+				{ "set_variable": { "name": "arnum_modifier", "value": 0 } }
+			],
+		}
+	],
+	[
+		{
+			"q": ["home"],
+			"w": ["delete_or_backspace"],
+			"e": ["forward_delete"],
+			"r": ["end"],
+			"t": ["vk_none"],
+			"y": ["hyphen"],
+			"u": ["7"],
+			"i": ["8"],
+			"o": ["9"],
+			"p": ["vk_none"],
+			"a": ["left_arrow"],
+			"s": ["up_arrow"],
+			"d": ["down_arrow"],
+			"f": ["right_arrow"],
+			"g": ["vk_none"],
+			"h": ["period"],
+			"j": ["4"],
+			"k": ["5"],
+			"l": ["6"],
+			"semicolon": ["vk_none"],
+			"z": ["vk_none"],
+			"x": ["page_up"],
+			"c": ["page_down"],
+			"v": ["vk_none"],
+			"b": ["vk_none"],
+			"n": ["0"],
+			"m": ["1"],
+			"comma": ["2"],
+			"period": ["3"],
+		} | to_entries | map(. as { "key": $from, "value": $to } | {
+			"type": "basic",
+			"from": {
+				"key_code": $from,
+				"modifiers": {
+					"optional": ["any"],
+				}
+			},
+			"to": [
+				{ "key_code": $to[-1], "modifiers": $to[:-1] }
+			],
+			"conditions": [
+				{
+					"type": "variable_if",
+					"name": "arnum_modifier",
+					"value": 1
+				}
+			]
+		})
+	],
+	[
+		{
+			"type": "basic",
+			"from": {
 				"key_code": "quote",
 				"modifiers": {
 					"optional": ["any"],
