@@ -22,7 +22,7 @@
 		{
 			"q": ["home"],
 			"w": ["delete_or_backspace"],
-			"e": ["forward_delete"],
+			"e": ["delete_forward"],
 			"r": ["end"],
 			"t": ["vk_none"],
 			"y": ["hyphen"],
