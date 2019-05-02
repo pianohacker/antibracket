@@ -139,6 +139,38 @@
 	],
 	[
 		{
+			"type": "basic",
+			"from": {
+				"key_code": "period",
+				"modifiers": {
+					"mandatory": ["shift"],
+				}
+			},
+			"to": [
+				{
+					"key_code": "slash",
+					"modifiers": ["left_shift"],
+				}
+			]
+		},
+		{
+			"type": "basic",
+			"from": {
+				"key_code": "z",
+				"modifiers": {
+					"mandatory": ["shift"],
+				}
+			},
+			"to": [
+				{
+					"key_code": "1",
+					"modifiers": ["left_shift"],
+				}
+			]
+		}
+	],
+	[
+		{
 			"q": "w",
 			"w": "f",
 			"e": "u",
