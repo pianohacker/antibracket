@@ -65,11 +65,11 @@ xkb_symbols "basic" {
 	};
 
 	key <AE11> {
-		[ minus,                   equal,                   NoSymbol,                U2011                   ],
+		[ minus,                   underscore,              NoSymbol,                U2011                   ],
 		[ NoSymbol,                NoSymbol                  ]
 	};
 	key <AE12> {
-		[ underscore,              minus,                   dead_abovering,          dead_dasia              ],
+		[ equal,                   plus,                   dead_abovering,          dead_dasia              ],
 		[ NoSymbol,                NoSymbol                  ]
 	};
 
@@ -78,7 +78,7 @@ xkb_symbols "basic" {
 	key.type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC";
 	key <AD01> {
 		[ w,                       W,                       quotedbl,                Greek_xi                ],
-		[ Prior,                   NoSymbol                  ]
+		[ Home,                    NoSymbol                  ]
 	};
 	key <AD02> {
 		[ f,                       F,                       underscore,              NoSymbol                ],
@@ -86,15 +86,15 @@ xkb_symbols "basic" {
 	};
 	key <AD03> {
 		[ u,                       U,                       bracketleft,             Greek_lambda            ],
-		[ Up,                      Up                        ]
+		[ Delete,                  Up                        ]
 	};
 	key <AD04> {
 		[ y,                       Y,                       bracketright,            Greek_chi               ],
-		[ Delete,                  NoSymbol                  ]
+		[ End,                     NoSymbol                  ]
 	};
 	key <AD05> {
 		[ z,                       Z,                       asciicircum,             Greek_omega             ],
-		[ Next,                    NoSymbol                  ]
+		[ NoSymbol,                NoSymbol                  ]
 	};
 
 	key <AD06> {
@@ -140,11 +140,11 @@ xkb_symbols "basic" {
 	key.type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC";
 	key <AC01> {
 		[ l,                       L,                       slash,                   NoSymbol                ],
-		[ Home,                    NoSymbol                  ]
+		[ Left,                    NoSymbol                  ]
 	};
 	key <AC02> {
 		[ o,                       O,                       minus,                   Greek_iota              ],
-		[ Left,                    Left                      ]
+		[ Up,                      Left                      ]
 	};
 	key <AC03> {
 		[ e,                       E,                       braceleft,               Greek_alpha             ],
@@ -156,7 +156,7 @@ xkb_symbols "basic" {
 	};
 	key <AC05> {
 		[ i,                       I,                       asterisk,                Greek_omicron           ],
-		[ End,                     NoSymbol                  ]
+		[ NoSymbol,                NoSymbol                  ]
 	};
 
 	key <AC06> {
@@ -198,11 +198,11 @@ xkb_symbols "basic" {
 	key.type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC";
 	key <AB02> {
 		[ g,                       G,                       dollar,                  U03F5                   ],
-		[ NoSymbol,                NoSymbol                  ]
+		[ Prior,                   NoSymbol                  ]
 	};
 	key <AB03> {
 		[ m,                       M,                       bar,                     Greek_eta               ],
-		[ bracketleft,             NoSymbol                  ]
+		[ Next,                    NoSymbol                  ]
 	};
 	key <AB04> {
 		[ j,                       J,                       asciitilde,              Greek_pi                ],
